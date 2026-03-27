@@ -1,0 +1,38 @@
+.tryon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 640px;
+  height: 480px;
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  background: #000;
+  border: 4px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Video */
+.video-feed {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* Mirror effect */
+  transform: scaleX(-1);
+}
+
+/* Canvas overlay */
+.canvas-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+
+  pointer-events: none;
+}
