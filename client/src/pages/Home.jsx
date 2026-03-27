@@ -253,7 +253,7 @@ const Home = () => {
         <div className="fade-in" style={{ display: 'flex', justifyContent: 'center', marginBottom: 20 }}>
           <SpinBorder>
             <span className="live-dot" />
-            AI-Powered Face Analysis — Live
+            Smart Face Recognition Instant
           </SpinBorder>
         </div>
 
