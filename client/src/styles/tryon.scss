@@ -1,0 +1,116 @@
+.app {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  font-family: sans-serif;
+  color: #111;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 30px;
+
+  span {
+    color: #2563eb;
+  }
+}
+
+.canvas-container {
+  position: relative;
+  z-index: 10;
+}
+
+.controls {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+/* Slider Section */
+.slider-section {
+  margin-bottom: 25px;
+  text-align: center;
+
+  label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    font-size: 11px;
+    color: #888;
+    font-weight: bold;
+  }
+
+  input {
+    flex: 1;
+    cursor: pointer;
+  }
+}
+
+/* Frame Selector */
+.frame-selector {
+  text-align: center;
+
+  label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.frame-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.frame-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 5px;
+  }
+
+  &:hover {
+    border-color: #60a5fa;
+  }
+
+  &.active {
+    border-color: #2563eb;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+  }
+}
